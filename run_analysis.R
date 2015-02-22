@@ -59,7 +59,7 @@ names(data) <- c("Activity","Subject",as.character(features$V2[sort(c(mean_colum
 ### From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. ###
 ######################################################################################################################################################
 
-# Delete column Activity because we already have the Activity name y then reorganize the order of columns
+# Delete column Activity because we already have the Activity name and then reorganize the order of columns
 data <- data[,c(2,82,3:81)]
 
 #Order by subject and activity  name
